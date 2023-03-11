@@ -183,6 +183,13 @@ gulp.task('css-themes', () => gulp.src(['./css/theme/source/*.{sass,scss}'])
         .pipe(compileSass())
         .pipe(gulp.dest('./dist/theme')))
 
+gulp.task("css-customs", () =>
+    gulp
+        .src(["./css/custom/*.{sass,scss}"])
+        .pipe(compileSass())
+        .pipe(gulp.dest("./dist/custom"))
+);
+
 gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
     .pipe(compileSass())
     .pipe(autoprefixer())
@@ -190,7 +197,7 @@ gulp.task('css-core', () => gulp.src(['css/reveal.scss'])
     .pipe(header(banner))
     .pipe(gulp.dest('./dist')))
 
-gulp.task('css', gulp.parallel('css-themes', 'css-core'))
+gulp.task('css', gulp.parallel('css-themes', 'css-core', 'css-customs'))
 
 gulp.task('qunit', () => {
 

@@ -1,0 +1,89 @@
+///********** Code formatting **********/
+//.container {
+//  display: flex;
+//}
+//
+//.col {
+//  flex: 1;
+//}
+//
+//.reveal pre code {
+//  max-height: 100%;
+//}
+//
+///********** Background **********/
+//
+///********** Slides: Title on top, content centered **********/
+//
+//.reveal .slides > section,
+//.reveal .slides > section > section {
+//  min-height: 100% !important;
+//  display: flex !important;
+//  flex-direction: column !important;
+//  justify-content: center !important;
+//  position: absolute !important;
+//  top: 0 !important;
+//}
+//
+//// section > h2,
+//// h3 {
+////   position: absolute !important;
+////   top: 0 !important;
+////   margin-left: auto !important;
+////   margin-right: auto !important;
+////   left: 0 !important;
+////   right: 0 !important;
+//// }
+//
+//.print-pdf .reveal .slides > section.present,
+//.print-pdf .reveal .slides > section > section.present {
+//  min-height: 770px !important;
+//  position: relative !important;
+//}
+//
+///********** First slide: Title in the middle, right aligned **********/
+//
+//.reveal .slides > section:first-child {
+//  position: initial !important;
+//}
+//
+//.reveal > .slides > section:first-child > h1,
+//.reveal > .slides > section:first-child > h2 {
+//  padding-left: 2em;
+//  text-align: right !important;
+//  justify-content: right !important;
+//  position: relative !important;
+//  margin-right: unset !important;
+//}
+//
+//.reveal > .slides > section:first-child > h1 {
+//  color: #55125e;
+//  padding-top: 45vh;
+//}
+//
+//.reveal > .slides > section:first-child > h2 {
+//  color: purple;
+//}
+//
+//section > p {
+//  text-align: left;
+//}
+//
+//.reveal blockquote {
+//  font-size: 0.7em;
+//  margin-left: 0;
+//  text-align: left;
+//  width: 100%;
+//  background: #f9fbfd;
+//}
+//.reveal blockquote p {
+//  margin: 5px;
+//}
+//
+//.reveal code:not(.hljs) {
+//  background: #ebebe9;
+//  color: #da574f;
+//  border-radius: 5px;
+//  font-size: 30px;
+//  padding: 3px 5px;
+//}

@@ -8,16 +8,27 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="dist/custom/custom.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/vs2015.css">
+
+		<!--Export Print:-->
+		<!--http://localhost:8000/?print-pdf-->
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+					# Reveal.js Template v2.0
+				</section>
+				<section data-markdown>
+					# Reveal.js Template v2.0
+				</section>
+				<section data-markdown>
+					# Reveal.js Template v2.0
+				</section>
 			</div>
 		</div>
 
@@ -25,15 +36,32 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/search/search.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
+				controls: true,
+				controlsBackArrows: 'faded',
+				progress: false,
+				history: false,
+				center: true,
+				transition: 'default', // none/fade/slide/convex/concave/zoom
 				hash: true,
-
+				slideNumber: "c",
+				// width: 1685,
+				// height: 1390,
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealNotes,
+					RevealSearch, //CTRL + SHIFT + F
+				]
 			});
 		</script>
 	</body>
