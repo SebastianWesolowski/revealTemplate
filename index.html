@@ -1,76 +1,78 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/white.css">
-		<link rel="stylesheet" href="dist/custom/custom.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.css">
+    <link rel="stylesheet" href="dist/custom/custom.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/vs2015.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/vs2015.css">
 
-		<!--Export Print:-->
-		<!--http://localhost:8000/?print-pdf-->
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-markdown>
-					# Reveal.js Template v2.0
-				</section>
+    <!--Export Print:-->
+    <!--http://localhost:8000/?print-pdf-->
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-markdown>
+            # Reveal.js Template v2.0
+        </section>
 
 
-				<section data-external="./includes/0_tablice/tablice.html"></section>
+        <section data-external="./includes/0_tablice/tablice.html"></section>
 
-				<!--END SLIDES-->
-			</div>
-		</div>
+        <section data-external="./includes/1_example/example.html"></section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
+        <!--END SLIDES-->
+    </div>
+</div>
 
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/search/search.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				controls: true,
-				controlsBackArrows: 'faded',
-				progress: false,
-				history: false,
-				center: true,
-				transition: 'default', // none/fade/slide/convex/concave/zoom
-				hash: true,
-				slideNumber: "c",
-				// width: 1685,
-				// height: 1390,
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [
-					RevealMarkdown,
-					RevealHighlight,
-					RevealNotes,
-					RevealSearch, //CTRL + SHIFT + F
-				],
-				dependencies: [
-					{
-						src: 'plugin/external/external.js',
-						condition: function () {
-							return !!document.querySelector('[data-external],[data-external-replace]');
-						}
-					},
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
 
-				]
-			});
-		</script>
-	</body>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script src="plugin/search/search.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        controls: true,
+        controlsBackArrows: 'faded',
+        progress: false,
+        history: false,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        hash: true,
+        slideNumber: "c",
+        width: 1280,
+        height: 720,
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+            RevealMarkdown,
+            RevealHighlight,
+            RevealNotes,
+            RevealSearch, //CTRL + SHIFT + F
+        ],
+        dependencies: [
+            {
+                src: 'plugin/external/external.js',
+                condition: function () {
+                    return !!document.querySelector('[data-external],[data-external-replace]');
+                }
+            },
+
+        ]
+    });
+</script>
+</body>
 </html>
