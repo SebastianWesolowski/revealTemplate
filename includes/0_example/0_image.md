@@ -2,7 +2,7 @@
 
 lokalnie w folderze
 
-![model dom](includes/1_example/src/array-1.png)
+![model dom](includes/0_example/src/array-1.png)
 
 Note:
 
