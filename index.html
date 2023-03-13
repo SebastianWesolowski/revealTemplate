@@ -23,12 +23,11 @@
 				<section data-markdown>
 					# Reveal.js Template v2.0
 				</section>
-				<section data-markdown>
-					# Reveal.js Template v2.0
-				</section>
-				<section data-markdown>
-					# Reveal.js Template v2.0
-				</section>
+
+
+				<section data-external="./includes/0_tablice/tablice.html"></section>
+
+				<!--END SLIDES-->
 			</div>
 		</div>
 
@@ -61,6 +60,15 @@
 					RevealHighlight,
 					RevealNotes,
 					RevealSearch, //CTRL + SHIFT + F
+				],
+				dependencies: [
+					{
+						src: 'plugin/external/external.js',
+						condition: function () {
+							return !!document.querySelector('[data-external],[data-external-replace]');
+						}
+					},
+
 				]
 			});
 		</script>

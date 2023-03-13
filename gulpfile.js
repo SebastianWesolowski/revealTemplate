@@ -43,7 +43,7 @@ const babelConfig = {
     compact: false,
     extensions: ['.js', '.html'],
     plugins: [
-        'transform-html-import-to-string'
+        'transform-html-import-to-string',
     ],
     presets: [[
         '@babel/preset-env',
@@ -127,6 +127,7 @@ gulp.task('plugins', () => {
         { name: 'RevealNotes', input: './plugin/notes/plugin.js', output: './plugin/notes/notes' },
         { name: 'RevealZoom', input: './plugin/zoom/plugin.js', output: './plugin/zoom/zoom' },
         { name: 'RevealMath', input: './plugin/math/plugin.js', output: './plugin/math/math' },
+        { name: 'RevealExternal', input: './node_modules/reveal_external/external/external.js', output: './plugin/external/external' },
     ].map( plugin => {
         return rollup({
                 cache: cache[plugin.input],
